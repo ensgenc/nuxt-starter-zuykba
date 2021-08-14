@@ -22,7 +22,8 @@
       @click="setStateArray"
     >SET STATE ARRAY</v-btn>
     <br>
-     <span>firstName</span>
+    <div style="margin-top:20px">
+         <span>firstName</span>
       <v-text-field
         v-model="formsObject.firstName"
         solo
@@ -32,13 +33,12 @@
         v-model="formsObject.lastName"
         solo
       />
-
-
     <v-btn
       elevation="2"
         class="ma-2"
       @click="setStateObject"
     >SET STATE OBJECT</v-btn>
+    </div>
     <br>
     <br>
       <p>State Array:  {{formsArray}} </p>
