@@ -21,6 +21,19 @@
       class="ma-2"
       @click="setStateArray"
     >SET STATE ARRAY</v-btn>
+    <br>
+     <span>firstName</span>
+      <v-text-field
+        v-model="formsObject.firstName"
+        solo
+      />
+     <span>lastName</span>
+      <v-text-field
+        v-model="formsObject.lastName"
+        solo
+      />
+
+
     <v-btn
       elevation="2"
         class="ma-2"
@@ -43,6 +56,10 @@ export default {
     data() {
     return {
       forms: [],
+      formsObject:{
+        firstName: '',
+        lastName: ''
+      }
     }
   },
   created() {
@@ -62,7 +79,7 @@ export default {
        this.SET_FORMSARRAY(this.forms)
     },
     setStateObject(){
-       this.SET_FORMSOBJECT(this.forms[0])
+       this.SET_FORMSOBJECT(this.formsObject)
     }
   }
 }
