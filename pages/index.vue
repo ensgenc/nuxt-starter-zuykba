@@ -56,9 +56,9 @@ export default {
     data() {
     return {
       forms: [],
-      formsObject:{
-        firstName: '',
-        lastName: ''
+      formsObject: {
+        firstName: 'sad',
+        lastName: 'sd'
       }
     }
   },
